@@ -1,0 +1,38 @@
+.navbar, .navbar-item{
+    background-color: #fcf3d6;
+    color: #cf7e2d;
+}
+
+.navbar-start .navbar-item > *{
+    background-color: #fcf3d6;
+    color: #cf7e2d;
+}
+
+
+
+section {
+    animation: transitionIn 0.5s;
+
+}
+
+.hero {
+    background-color: #cf7e2d;
+}
+
+figure, .image {
+    animation: transitionIn 0.5s;
+    max-width: 100%;
+    height: auto;
+}
+
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}

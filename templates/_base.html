@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Layman's Perspective{% endblock title %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+
+    {% block css %}
+    
+    {% endblock css %}
+</head>
+<body>
+{% block header %}
+    <nav class="navbar is-expanded" role="navigation" aria-label="main-navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="target">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="target" class="navbar-menu is-active">
+            <div class="navbar-start ml-4">
+                <a class="navbar-item" href="#">
+                    Home
+                </a>
+                <a class="navbar-item" href="#">
+                    Buy the Book
+                </a>
+                <a class="navbar-item" href="#">
+                    About the Author
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-arrowless">
+                        More
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Small Group Resources
+                        </a>
+                        <a class="navbar-item">
+                            Leave Review
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Contact Dave
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+{% endblock header %}
+
+{% block content %}
+
+{% endblock content %}
+</body>
+</html>
