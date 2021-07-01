@@ -1,9 +1,42 @@
 {% extends '_base.html' %}
+{% load static %}
 {% block title %}About Dave{% endblock title %}
 
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock css %}
+
 {% block content %}
-    <h1 class="title">About Dave</h1>
-    <figure class="image is-4by3">
-        <img class="has-ratio">
-    </figure>
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <section class="articles">
+            <div class="column is-8 is-offset-2">
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title">About Dave Foucar</p>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero doloremque perferendis alias, consequatur atque inventore adipisci labore, nihil magni, obcaecati eveniet nesciunt deserunt corporis quae iure quisquam magnam unde ex.</p>
+                            <p>Nam necessitatibus facilis natus soluta eum voluptate quaerat numquam fugiat magnam aut optio ad eaque atque modi repellat, hic autem reiciendis eius quam dignissimos. Eum qui quibusdam ducimus dignissimos ea!</p>
+                            <p>Doloremque corporis neque odio nemo illo voluptas sit esse? Recusandae nulla tempora, maxime voluptatum architecto possimus accusamus illum dignissimos blanditiis voluptatem sint atque in repellat nisi ad, quasi, asperiores optio?</p>
+                            <p>Expedita fugit, et hic ab deserunt quaerat similique magni repudiandae modi impedit laudantium. Quaerat, distinctio eaque enim ex quos praesentium doloremque laboriosam similique placeat rerum ullam in quod necessitatibus nobis!</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 {% endblock content %}
+

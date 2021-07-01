@@ -24,13 +24,13 @@
         </div>
         <div id="target" class="navbar-menu is-active">
             <div class="navbar-start ml-4">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="{% url 'home' %}">
                     Home
                 </a>
                 <a class="navbar-item" href="#">
                     Buy the Book
                 </a>
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="{% url 'about' %}">
                     About the Author
                 </a>
                 <div class="navbar-item has-dropdown is-hoverable">
@@ -55,8 +55,9 @@
     </nav>
 {% endblock header %}
 
-{% block content %}
-
-{% endblock content %}
+<div>
+    {% block content %}
+    {% endblock content %}
+</div>
 </body>
 </html>

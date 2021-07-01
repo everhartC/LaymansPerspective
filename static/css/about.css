@@ -1,0 +1,29 @@
+.hero-body {
+    background-image: url('/static/images/DSC00857.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+.articles {
+    margin: 5rem 0;
+    margin-top: -200px;
+}
+
+.card-content {
+    background-color: transparent;
+    /* padding: 1.5rem; */
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.card {
+    background-color: #fcf3d6;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    color: #4a4a4a;
+    max-width: 100%;
+    position: relative;
+}
