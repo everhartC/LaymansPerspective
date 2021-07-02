@@ -1,5 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 .hero-body {
-    background-image: url('/static/images/DSC00857.JPG');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
