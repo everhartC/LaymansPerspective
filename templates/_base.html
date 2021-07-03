@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Layman's Perspective{% endblock title %}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% block css %}
     
     {% endblock css %}
@@ -22,7 +23,7 @@
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        <div id="target" class="navbar-menu is-active">
+        <div id="target" class="navbar-menu is-hoverable">
             <div class="navbar-start ml-4">
                 <a class="navbar-item" href="{% url 'home' %}">
                     Home

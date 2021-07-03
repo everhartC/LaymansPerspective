@@ -4,7 +4,7 @@
 
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/about.css' %}">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'css/base.css' %}"> {% endcomment %}
 
 {% endblock css %}
 
@@ -12,22 +12,22 @@
     <section class="hero is-medium">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <figure class="image">
+                {% comment %} <figure class="image">
                     <img style="width:100%;" src="{% static 'images/DSC00857.JPG' %}" alt="">
-                </figure>
+                </figure> {% endcomment %}
             </div>
         </div>
     </section>
 
 
-    <div class="container is-desktop">
+    <div class="container is-fullhd">
         <section class="articles">
             <div class="column is-8 is-offset-2">
                 <div class="card article">
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content has-text-centered">
-                                <p class="title article-title">About Dave Foucar</p>
+                                <p class="title article-title">About David Foucar</p>
                             </div>
                         </div>
                         <div class="content article-body">
@@ -35,7 +35,24 @@
                             <p>Nam necessitatibus facilis natus soluta eum voluptate quaerat numquam fugiat magnam aut optio ad eaque atque modi repellat, hic autem reiciendis eius quam dignissimos. Eum qui quibusdam ducimus dignissimos ea!</p>
                             <p>Doloremque corporis neque odio nemo illo voluptas sit esse? Recusandae nulla tempora, maxime voluptatum architecto possimus accusamus illum dignissimos blanditiis voluptatem sint atque in repellat nisi ad, quasi, asperiores optio?</p>
                             <p>Expedita fugit, et hic ab deserunt quaerat similique magni repudiandae modi impedit laudantium. Quaerat, distinctio eaque enim ex quos praesentium doloremque laboriosam similique placeat rerum ullam in quod necessitatibus nobis!</p>
-
+                        </div>
+                    </div>
+                </div>
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-center">
+                                <figure class="image">
+                                    <img src="{% static 'images/IMG_1874.jpg' %}" alt="placeholder">
+                                </figure>
+                            </div>
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title">Dave's Awesome Life</p>
+                                <br>
+                                <p class="has-text-centered">
+                                Dave loves spending time with family but especially with his granddaughter Charlotte.
+                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>

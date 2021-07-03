@@ -1,6 +1,5 @@
 body {
-    font-family: 'Roboto', serif, sans-serif;
-    /* font-size: 50px; */
+    font-family: 'Roboto Slab', serif;
 }
 
 .navbar, .navbar-item{
@@ -8,7 +7,17 @@ body {
     color: #cf7e2d;
 }
 
+a.navbar-item:hover {
+    background-color: white;
+    color: #cf7e2d;
+}
+
 .navbar-start .navbar-item > *{
+    background-color: #fcf3d6;
+    color: #cf7e2d;
+}
+
+.navbar-dropdown a.navbar-item:hover {
     background-color: #fcf3d6;
     color: #cf7e2d;
 }
