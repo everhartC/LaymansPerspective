@@ -8,17 +8,17 @@
     color: #cf7e2d;
 }
 
-section {
+/* section {
     animation: transitionIn 0.5s;
 
-}
+} */
 
 .hero {
     background-color: #cf7e2d;
 }
 
 figure, .image {
-    animation: transitionIn 0.5s;
+    /* animation: transitionIn 0.5s; */
     max-width: 100%;
     height: auto;
 }
