@@ -2,10 +2,13 @@
 {% load static %}
 
 {% block content %}
-    <div class="listbooks">
-        {% for book in book_list %}
-            <div class="card">
-                <p class="title">{{book.title}}</p>
+{% for book in book_list %}
+    <div class="card is-half">
+        <div class="card-header">
+            <p class="card-header-title">{{book.title}}</p>
+        </div>
+        <div class="card-content">
+            <div class="content">
                 {% if book.subtitle %}
                     <p class="subtitle">{{book.subtitle}}</p>
                 {% endif %}
@@ -16,6 +19,7 @@
                     <p><a href="{{book.link}}">See on Amazon</a></p>
                 {% endif %}
             </div>
-        {% endfor %}
+        </div>
     </div>
+{% endfor %}
 {% endblock content %}
