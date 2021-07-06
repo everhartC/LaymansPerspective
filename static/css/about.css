@@ -9,14 +9,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 1000px;
-    animation: transitionIn 1s;
+    overflow: hidden;
+    animation: transitionIn 1.0s;
 }
 
 .articles {
     margin: 5rem 0;
     margin-top: -300px;
-    animation-delay: 1.5s;
-    animation: transitionDown 1.5s;
 }
 
 .card-content {

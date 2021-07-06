@@ -1,0 +1,21 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="listbooks">
+        {% for book in book_list %}
+            <div class="card">
+                <p class="title">{{book.title}}</p>
+                {% if book.subtitle %}
+                    <p class="subtitle">{{book.subtitle}}</p>
+                {% endif %}
+                <h3 class="author">{{book.author}}</h3>
+                {% if book.id == 6 %}
+                    <p><a href="{{book.link}}">Link to Short Story</a></p>
+                {% else %}
+                    <p><a href="{{book.link}}">See on Amazon</a></p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
