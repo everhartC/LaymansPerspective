@@ -1,6 +1,12 @@
 $(function() {
-    var $sec = $('section');
-
-    $sec.css('transform', 'translateY(-100%');
-    $sec.animate({transform: '+=transformY(100%)'});
+    // $('.hero-body').animate({
+    //     transitionDown: '1s'
+    // }, {
+    //     duration: 1,
+    //     complete: function() {
+    //         $('.articles').animate({
+    //             transitionDown: '1s'
+    //         }, 1);
+    //     }
+    // });
 });
