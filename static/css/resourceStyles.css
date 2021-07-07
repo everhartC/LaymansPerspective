@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card-header {
+    background: lightgray;
+    font-size: 1.5em;
+}
+
+.content {
+    text-align: center;
+}

@@ -1,23 +1,38 @@
 {% extends '_base.html' %}
 {% load static %}
 
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/resourceStyles.css' %}">
+{% endblock css %}
+
 {% block content %}
 {% for book in book_list %}
-    <div class="card is-half">
-        <div class="card-header">
-            <p class="card-header-title">{{book.title}}</p>
-        </div>
-        <div class="card-content">
-            <div class="content">
-                {% if book.subtitle %}
-                    <p class="subtitle">{{book.subtitle}}</p>
-                {% endif %}
-                <h3 class="author">{{book.author}}</h3>
-                {% if book.id == 6 %}
-                    <p><a href="{{book.link}}">Link to Short Story</a></p>
-                {% else %}
-                    <p><a href="{{book.link}}">See on Amazon</a></p>
-                {% endif %}
+    <div class="columns is-multiline">
+        <div class="column is-half">
+            <div class="card">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-96x96">
+                                <img src="http://covers.openlibrary.org/b/isbn/{{book.isbn}}-M.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title">{{book.title}}</p>
+                            {% if book.subtitle %}
+                                <p class="subtitle">{{book.subtitle}}</p>
+                            {% endif %}
+                            <p class="author subtitle">{{book.author}}</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        {% if book.id == 6 %}
+                            <p><a href="{{book.link}}">Link to Short Story</a></p>
+                        {% else %}
+                            <p><a href="{{book.link}}">See on Amazon</a></p>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
