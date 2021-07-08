@@ -17,13 +17,13 @@ section {
     background-color: #cf7e2d;
 }
 
-figure, .image {
-    animation: transitionIn 0.5s;
-    max-width: 100%;
-    height: auto;
-    display: block;
+.hero-body {
+    justify-content: center;
 }
 
+.card-content {
+    justify-content: center;
+}
 
 @keyframes transitionIn {
     from {

@@ -1,6 +1,6 @@
 from typing import List
 from django.views.generic import TemplateView, ListView
-from .models import Book
+from .models import Book, Review
 
 # Create your views here.
 
@@ -16,3 +16,8 @@ class BookListView(ListView):
     template_name = 'resources.html'
     model = Book
     context_object_name = 'book_list'
+
+
+class ReView(TemplateView):
+    template_name = "reviews.html"
+    model = Review

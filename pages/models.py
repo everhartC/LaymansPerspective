@@ -14,3 +14,18 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Review(models.Model):
+    description = models.TextField(null=True, blank=True)
+    rating = models.IntegerField()
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return (self.name, self.description)
+
+
+
