@@ -6,9 +6,10 @@
 {% endblock css %}
 
 {% block content %}
-{% for book in book_list %}
-    <div class="columns is-multiline">
-        <div class="column is-half">
+    <div class="columns">
+        <div class="column is-4">
+            <p class="toptitle">Resources Mentioned in the Book</p>
+        {% for book in book_list %}
             <div class="card">
                 <div class="card-content">
                     <div class="media">
@@ -27,15 +28,32 @@
                     </div>
                     <div class="content">
                         {% if book.id == 6 %}
-                            <p><a href="{{book.link}}">Link to Short Story</a></p>
+                            <p><a class="booklink" href="{{book.link}}" target="_blank">Link to Short Story</a></p>
                         {% else %}
-                            <p><a href="{{book.link}}">See on Amazon</a></p>
+                            <p><a class="booklink" href="{{book.link}}" target="_blank">See on Amazon</a></p>
                         {% endif %}
                     </div>
                 </div>
             </div>
+        {% endfor %}
+        </div>
+        <div class="column">
+            <p class="toptitle">Small Group Questions</p>
         </div>
     </div>
-    <script src="{% static 'js/resources.js' %}"></script>
-{% endfor %}
+
+<script>
+    $(function() {
+        var newLink = [];
+        {% for book in book_list %}
+            newLink.push("{{book.link}}");
+        {% endfor %}
+        {% comment %} console.log(newLink); {% endcomment %}
+
+        $('.booklink').addEventListener('click', function() {
+            window.open($(this).attr("href"), '_blank')
+        })
+    });
+</script>
+
 {% endblock content %}
