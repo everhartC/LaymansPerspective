@@ -9,7 +9,7 @@
 }
 
 .column {
-    outline: dotted red 2px;
+    outline: solid black 1px;
 }
 
 .card-header {
@@ -55,4 +55,16 @@ p.subtitle {
 
 .author .subtitle {
     margin-top: 25px;
+}
+
+a.collapsible {
+    display: block;
+    color: #d3893c;
+    cursor: pointer;
+
+}
+
+a.collapsible:hover {
+    background-color: gray;
+    color: white;
 }
