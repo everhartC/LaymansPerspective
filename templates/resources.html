@@ -28,9 +28,9 @@
                     </div>
                     <div class="content">
                         {% if book.id == 6 %}
-                            <p><a class="booklink" href="{{book.link}}" target="_blank">Link to Short Story</a></p>
+                            <p><a class="booklink" href="{{book.link}}">Link to Short Story</a></p>
                         {% else %}
-                            <p><a class="booklink" href="{{book.link}}" target="_blank">See on Amazon</a></p>
+                            <p><a class="booklink" href="{{book.link}}">See on Amazon</a></p>
                         {% endif %}
                     </div>
                 </div>
@@ -42,18 +42,6 @@
         </div>
     </div>
 
-<script>
-    $(function() {
-        var newLink = [];
-        {% for book in book_list %}
-            newLink.push("{{book.link}}");
-        {% endfor %}
-        {% comment %} console.log(newLink); {% endcomment %}
-
-        $('.booklink').addEventListener('click', function() {
-            window.open($(this).attr("href"), '_blank')
-        })
-    });
-</script>
+<script src="{% static 'js/resources.js' %}"></script>
 
 {% endblock content %}
