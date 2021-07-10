@@ -57,7 +57,17 @@ p.subtitle {
     margin-top: 25px;
 }
 
-.dropdown {
+#collapsible {
+    background-color: white;
+    color: #d3893c;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button {
+    border-color: #d3893c;
+}
+/* .dropdown {
     display: block;
     width: 100%;
     text-align: left;
@@ -65,11 +75,11 @@ p.subtitle {
 }
 
 .button {
-    /* display: inline-block; */
+    display: inline-block;
     width: 100%;
     text-align: left;
     padding-right: 5%;
-    /* border-color: #d3893c; */
+    border-color: #d3893c;
     cursor: pointer;
 }
 
@@ -99,4 +109,4 @@ a.collapsible {
 
 .dropdown-content {
     display: none;
-}
+} */
