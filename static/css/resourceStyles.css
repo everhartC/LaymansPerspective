@@ -57,14 +57,46 @@ p.subtitle {
     margin-top: 25px;
 }
 
+.dropdown {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.button {
+    /* display: inline-block; */
+    width: 100%;
+    text-align: left;
+    padding-right: 5%;
+    /* border-color: #d3893c; */
+    cursor: pointer;
+}
+
+.icon{
+    float: right;
+}
+
+.fa, .fas {
+    margin-right: 5%;
+}
+
+.collapsible {
+    margin-left: 5%;
+}
+
 a.collapsible {
     display: block;
-    color: #d3893c;
+    color: #cc853a;
     cursor: pointer;
+    width: 100%;
 
 }
 
-a.collapsible:hover {
-    background-color: gray;
-    color: white;
+.button.is-hovered, .button:hover {
+    border-color: #d3893c ;
+}
+
+.dropdown-content {
+    display: none;
 }
