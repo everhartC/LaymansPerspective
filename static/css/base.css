@@ -2,6 +2,10 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+.navbar {
+    border-bottom: 2px solid #d3893c;
+}
+
 .navbar, .navbar-item{
     background-color: #fcf3d6;
     color: #cf7e2d;
