@@ -25,3 +25,14 @@ a.navbar-item:hover {
     background-color: #fcf3d6;
     color: #cf7e2d;
 }
+
+.navbar-item:not(:last-child) {
+    font-size: 1.25rem;
+    border-right: 2px solid #cf7e2d;
+    /* margin-right: 5%; */
+}
+
+
+.navbar-link {
+    font-size: 1.25rem;
+}

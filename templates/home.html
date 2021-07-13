@@ -5,20 +5,63 @@
 {% block title %}Home{% endblock title %}
 
 {% block css %}
+{% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"> {% endcomment %}
 <link rel="stylesheet" href="{% static 'css/home.css' %}">
 {% endblock css %}
 
-{% block content %}
-    <section class="hero is-fullheight-with-navbar">
-        <div class="hero-body">
-            <div class="card equal-height">
-                <div class="card-content">
-                    <figure class="image is-128x128">
-                        <img class="center" src="{% static 'images/cover.png' %}" alt="">
-                    </figure>
+{% block header %}
+    <nav class="navbar is-expanded is-spaced" role="navigation" aria-label="main-navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="target">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="target" class="navbar-menu is-hoverable">
+            <div class="navbar-start ml-4">
+                <a id="0" class="navbar-item fancy" href="{% url 'home' %}">
+                    Home
+                </a>
+                <a id="1" class="navbar-item fancy" href="#">
+                    Buy the Book
+                </a>
+                <a id="2" class="navbar-item fancy" href="{% url 'about' %}">
+                    About the Author
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a id="3" class="navbar-link fancy is-arrowless">
+                        More
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="{% url 'resources' %}">
+                            Additional Resources
+                        </a>
+                        <a class="navbar-item">
+                            Leave Review
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Contact Dave
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </nav>
+{% endblock header %}
+
+{% block content %}
+        <section class="hero is-fullheight-with-navbar">
+            <div class="hero-body">
+                <div class="card equal-height">
+                    <div class="card-content">
+                        <figure class="image is-128x128">
+                            <img class="center" src="{% static 'images/cover.png' %}" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
 <script src="{% static 'js/home.js' %}"></script>
 {% endblock content %}
