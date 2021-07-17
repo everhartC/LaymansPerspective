@@ -10,7 +10,13 @@
 {% endblock css %}
 
 {% block header %}
-    <nav class="navbar is-expanded is-spaced" role="navigation" aria-label="main-navigation">
+
+    <section class="hero is-medium">
+        <div id="hbody" class="hero-body">
+            <p id="fancy" class="title">Dave Foucar</p>
+        </div>
+    </section>
+    <nav class="navbar is-expanded is-spaced is-transparent" role="navigation" aria-label="main-navigation">
         <div class="navbar-brand">
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="target">
                 <span aria-hidden="true"></span>
@@ -20,7 +26,7 @@
         </div>
         <div id="target" class="navbar-menu is-hoverable">
             <div class="navbar-start ml-4">
-                <a id="0" class="navbar-item fancy" href="{% url 'home' %}">
+                <a id="0" class="navbar-item fancy is-4" href="{% url 'home' %}">
                     Home
                 </a>
                 <a id="1" class="navbar-item fancy" href="#">
@@ -30,7 +36,7 @@
                     About the Author
                 </a>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a id="3" class="navbar-link fancy is-arrowless">
+                    <a id="elLink" class="navbar-link fancy is-arrowless">
                         More
                     </a>
                     <div class="navbar-dropdown">
@@ -49,16 +55,20 @@
             </div>
         </div>
     </nav>
+
 {% endblock header %}
 
 {% block content %}
-        <section class="hero is-fullheight-with-navbar">
-            <div class="hero-body">
-                <div class="card equal-height">
-                    <div class="card-content">
-                        <figure class="image is-128x128">
+        <section id="content" class="hero is-fullheight-with-navbar">
+            <div id="firefall" class="hero-body">
+                <div class="columns mt-3">
+                    <div id="bgtrans" class="column is-4 box">
+                        <figure class="image">
                             <img class="center" src="{% static 'images/cover.png' %}" alt="">
                         </figure>
+                    </div>
+                    <div id="bdesc" class="column is-7 is-offset-1">
+
                     </div>
                 </div>
             </div>

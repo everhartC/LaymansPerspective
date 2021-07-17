@@ -3,41 +3,86 @@
     padding: 0;
 }
 
+#firefall {
+    background-image: url('/static/images/DSC03195.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-body p.title {
+    font-size: 8rem;
+}
+
+.navbar {
+    width: auto;
+    min-height: 10.5rem;
+}
+
+.navbar-start {
+    flex-grow: 1;
+    justify-content: center;
+}
+
 .navbar, .navbar-item{
     background-color: #fcf3d6;
     color: #cf7e2d;
 }
 
+.navbar-item.fancy {
+    font-size: 2rem;
+}
+
+#elLink {
+    font-size: 2rem;
+}
+
 .navbar-start .navbar-item > *{
     background-color: #fcf3d6;
     color: #cf7e2d;
+    font-size: large;
 }
 
-section {
+#content {
     animation: transitionIn 0.5s;
-
 }
 
-.hero {
-    background-color: white;
+/* #fancy {
+    justify-content: center;
+} */
+
+figure {
+    width: 100%;
+    height: auto;
+}
+
+#bgtrans {
+    background: transparent;
 }
 
 .hero-body {
-    justify-content: center;
+
+    background-color: white;
 }
 
-.card-content {
-    justify-content: center;
+#bdesc {
+    background-color: white;
 }
 
 span {
     opacity: 0;
-    transition: all 0.4s ease;
+    transition: all 2s ease;
+    transform: translateY(50px);
+    display: inline-block;
+    color: #cf7e2d; 
 }
 
 span.fade {
-    opacity: 1;
+    opacity: 1; 
+    transform: translateY(0px);
+    color: black; 
 }
+
 
 @keyframes transitionIn {
     from {
