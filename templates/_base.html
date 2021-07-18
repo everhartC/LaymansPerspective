@@ -20,7 +20,7 @@
 </head>
 <body>
 {% block header %}
-    <nav class="navbar is-expanded is-spaced" role="navigation" aria-label="main-navigation">
+    <nav class="navbar is-expanded is-spaced is-fixed-top" role="navigation" aria-label="main-navigation">
         <div class="navbar-brand">
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="target">
                 <span aria-hidden="true"></span>
@@ -61,10 +61,9 @@
     </nav>
 {% endblock header %}
 
-<div>
-    {% block content %}
-    {% endblock content %}
-</div>
+{% block content %}
+{% endblock content %}
+
 
 {% comment %} <script src="{% static 'js/home.js' %}"></script> {% endcomment %}
 </body>
