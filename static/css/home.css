@@ -3,70 +3,71 @@
     padding: 0;
 }
 
-#firefall {
-    background-image: url('/static/images/DSC03195.JPG');
-    background-position: center;
+#homeHtml {
+    background: url('/static/images/DSC03204.JPG') no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    overflow: auto;
+    padding-top: 0;
 }
 
-.hero-body p.title {
-    font-size: 8rem;
+.container {
+    position: fixed;
 }
 
-.navbar {
-    width: auto;
-    min-height: 10.5rem;
+#fancy {
+    font-size: 6rem;
+    margin-top: 2%;
+    display: inline-flex;
+}
+
+#mainnav {
+    background-color: transparent;
+    min-height: 5rem;
+    border: none;
+}
+
+figure.image {
+    width: 70%;
+    height: 70%;
+    animation: transitionIn 1.5s;
 }
 
 .navbar-start {
     flex-grow: 1;
     justify-content: center;
+    background-color: transparent;
 }
 
 .navbar, .navbar-item{
-    background-color: #fcf3d6;
+    /* HOME - BUY THE BOOK - ABOUT THE AUTHOR */
     color: #cf7e2d;
 }
 
 .navbar-item.fancy {
     font-size: 2rem;
+    background-color: transparent;
 }
 
 #elLink {
     font-size: 2rem;
+    background-color: transparent;
 }
 
-.navbar-start .navbar-item > *{
-    background-color: #fcf3d6;
-    color: #cf7e2d;
-    font-size: large;
-}
-
-#content {
-    animation: transitionIn 0.5s;
-}
-
-/* #fancy {
-    justify-content: center;
-} */
-
-figure {
-    width: 100%;
-    height: auto;
+#test {
+    background-color: transparent;
 }
 
 #bgtrans {
     background: transparent;
 }
 
-.hero-body {
-
-    background-color: white;
-}
-
 #bdesc {
-    background-color: white;
+    background-color: lightgray;
+    opacity: .9;
+    animation: transitionUp 1.5s;
 }
 
 span {
@@ -74,13 +75,13 @@ span {
     transition: all 2s ease;
     transform: translateY(50px);
     display: inline-block;
-    color: #cf7e2d; 
+    /* color: #cf7e2d;  */
 }
 
 span.fade {
     opacity: 1; 
     transform: translateY(0px);
-    color: black; 
+    color: white; 
 }
 
 
@@ -92,5 +93,16 @@ span.fade {
     to {
         opacity: 1;
         transform: translateX(0%);
+    }
+}
+
+@keyframes transitionUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
     }
 }

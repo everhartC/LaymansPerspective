@@ -6,4 +6,7 @@ $(function() {
             .not(':animated')
             .slideToggle();
     });
+
+    var $html = $('html');
+    $html.attr('id', 'resourcesHtml');
 });

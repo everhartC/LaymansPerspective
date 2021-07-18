@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+#resourcesHtml {
+    padding-top: 0;
+}
+
 .columns {
     margin-bottom: 10px;
     /* padding: 5px; */
