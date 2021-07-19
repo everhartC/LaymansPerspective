@@ -13,8 +13,9 @@
     padding-top: 0;
 }
 
-.container {
+.container.is-fluid {
     position: fixed;
+    padding-left: 0;
 }
 
 #fancy {
@@ -32,8 +33,8 @@
 }
 
 figure.image {
-    width: 70%;
-    height: 70%;
+    /* width: 70%;
+    height: 70%; */
     animation: transitionIn 1.5s;
 }
 
@@ -68,14 +69,20 @@ figure.image {
 
 #bdesc {
     background-color: lightgray;
-    opacity: .9;
+    opacity: .7;
     animation: transitionUp 1.5s;
+}
+
+#bdesc .subtitle {
+    font-size: 3vh;
+    margin-bottom: 5%;
+    border-bottom: 2px solid black;
 }
 
 span {
     opacity: 0;
     transition: all 2s ease;
-    transform: translateY(50px);
+    transform: translateY(-500px);
     display: inline-block;
     /* color: #cf7e2d;  */
 }
@@ -84,6 +91,38 @@ span.fade {
     opacity: 1; 
     transform: translateY(0px);
     color: white; 
+}
+
+.bd-notification {
+    font-size: 2vh;
+    vertical-align: middle;
+    /* border-right: 2px solid black; */
+    padding: 10px;
+}
+
+#desc {
+    border-right: 2px solid black;
+    /* border-radius: 1rem; */
+}
+
+#reviewCol {
+    position: relative;
+}
+
+#reviewCol .card {
+    position: absolute;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+#buybook {
+    padding-bottom: 0;
+}
+
+button a{
+    color: #cf7e2d;
 }
 
 

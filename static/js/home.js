@@ -35,4 +35,14 @@ $(function() {
     var $body = $('body');
     $body.attr('id', 'htmlBody');
 
+    $('#reviewCol .card:gt(0)').hide();
+    setInterval(function() {
+        $('#reviewCol .card:first')
+        .fadeOut(2000)
+        .next()
+        .fadeIn(2000)
+        .end()
+        .appendTo('#reviewCol');
+    }, 10000);
+
 });

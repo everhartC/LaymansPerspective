@@ -18,7 +18,7 @@ class Book(models.Model):
 
 class Review(models.Model):
     description = models.TextField(null=True, blank=True)
-    rating = models.IntegerField()
+    rating = models.IntegerField(default=5)
     name = models.CharField(max_length=100)
     email = models.EmailField()
     created_at = models.DateTimeField(auto_now_add=True)
