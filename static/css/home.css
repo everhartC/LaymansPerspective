@@ -19,9 +19,9 @@
 }
 
 #fancy {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-top: 3%;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
     /* display: inline-flex; */
     width: 100%;
 }
@@ -63,19 +63,20 @@ figure.image {
     background-color: transparent;
 }
 
-#bgtrans {
-    background: transparent;
+.left {
+    max-height: 900px;
 }
 
 #bdesc {
     background-color: lightgray;
     opacity: .7;
     animation: transitionUp 1.5s;
+    padding-bottom: 0;
 }
 
 #bdesc .subtitle {
     font-size: 3vh;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     border-bottom: 2px solid black;
 }
 
@@ -102,7 +103,6 @@ span.fade {
 
 #desc {
     border-right: 2px solid black;
-    /* border-radius: 1rem; */
 }
 
 #reviewCol {
@@ -117,12 +117,38 @@ span.fade {
     border-radius: 1rem;
 }
 
-#buybook {
-    padding-bottom: 0;
+.card-content {
+    padding: 1rem;
 }
 
-button a{
+#buttcol {
+    position: absolute;
+    bottom: 0;
+}
+
+.button a{
+    outline-color: transparent;
+    color: #cf732d;
+}
+
+/* button a:hover::before{
     color: #cf7e2d;
+} */
+.button {
+    animation: fillOut .5s;
+    color: #cf732d;
+}
+
+.button:hover{
+    color: #cf7e2d;
+    width: 100%;
+    border-color: 1px solid #91640F;
+    animation: fill .5s;
+} 
+
+.button:active {
+    outline-color: 1px solid #cf732d;
+    color: #cf732d;
 }
 
 
@@ -145,5 +171,23 @@ button a{
     to {
         opacity: 1;
         transform: translateY(0%);
+    }
+}
+
+@keyframes fill {
+    0% {
+        width: 35%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes fillOut {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 35%;
     }
 }

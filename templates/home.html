@@ -2,8 +2,6 @@
 {% extends '_base.html' %}
 {% load static %}
 
-{% block title %}Home{% endblock title %}
-
 {% block css %}
 {% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"> {% endcomment %}
 <link rel="stylesheet" href="{% static 'css/home.css' %}">
@@ -57,8 +55,8 @@
             <div class="hero-body">
                 <div class="container has-text-centered is-fluid">
                     <p id="fancy" class="title">Dave Foucar</p>
-                    <div class="columns">
-                        <div id="bgtrans" class="column is-3">
+                    <div id="bigcolumns" class="columns">
+                        <div class="column is-3 pt-0">
                             <figure class="image">
                                 <img class="left" src="{% static 'images/cover.png' %}" alt="">
                             </figure>
@@ -69,8 +67,8 @@
                                 <strong><em>But what do you say when people ask about Jesus?</em></strong>
                             </p>
 
-                            <!-- LOOPED REVIEW PORTION-->
-                            <div class="columns">
+                            <!-- BOOK DESCRIPTION COLUMN-->
+                            <div id="rightbox" class="columns is-centered">
                                 <div id="desc" class="column">
                                     <div class="card">
                                         <div class="card-content">
@@ -86,7 +84,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="reviewCol" class="column is-three-fifths mr-3">
+                                <!-- REVIEW COLUMN -->
+                                <div id="reviewCol" class="column mr-3">
                                     <div id="marCard" class="card">
                                         <div class="card-content">
                                             <p class="bd-notification">
@@ -125,10 +124,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="buybook" class="column">
-                                <button class="button is-large">
-                                    <a href="#">Buy Book</a>
-                                </button>
+                            <div class="columns is-centered" style="margin-top: 20px;">
+                                <div id="buttcol" class="column is-one-fifth">
+                                    <button class="button is-large is-full-width is-rounded">
+                                        <a href="https://www.amazon.com/dp/B099C4YV18">Buy Book</a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
