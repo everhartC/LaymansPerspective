@@ -33,9 +33,16 @@
 }
 
 figure.image {
-    /* width: 70%;
-    height: 70%; */
     animation: transitionIn 1.5s;
+    height: 100%;
+}
+
+/* #imgcol {
+    max-height: 1000px;
+} */
+
+.left {
+    height: 100%;
 }
 
 .navbar-start {
@@ -63,10 +70,6 @@ figure.image {
     background-color: transparent;
 }
 
-.left {
-    max-height: 900px;
-}
-
 #bdesc {
     background-color: lightgray;
     opacity: .7;
@@ -75,7 +78,7 @@ figure.image {
 }
 
 #bdesc .subtitle {
-    font-size: 3vh;
+    font-size: 1.5rem;
     margin-bottom: 1%;
     border-bottom: 2px solid black;
 }
@@ -94,11 +97,11 @@ span.fade {
     color: white; 
 }
 
-.bd-notification {
-    font-size: 2vh;
-    vertical-align: middle;
+p.bd-notification {
+    font-size: 1rem;
     /* border-right: 2px solid black; */
     padding: 10px;
+    line-height: 100%;
 }
 
 #desc {
@@ -107,6 +110,8 @@ span.fade {
 
 #reviewCol {
     position: relative;
+
+
 }
 
 #reviewCol .card {
@@ -115,10 +120,11 @@ span.fade {
 
 .card {
     border-radius: 1rem;
+    height: auto;
 }
 
 .card-content {
-    padding: 1rem;
+    padding: 0;
 }
 
 #buttcol {
@@ -131,9 +137,8 @@ span.fade {
     color: #cf732d;
 }
 
-/* button a:hover::before{
-    color: #cf7e2d;
-} */
+
+
 .button {
     animation: fillOut .5s;
     color: #cf732d;

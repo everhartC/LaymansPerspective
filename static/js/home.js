@@ -3,7 +3,7 @@ $(function() {
     // console.log(text);
     const strText = text.textContent;
     const splitText = strText.split("");
-    // console.log(splitText);
+    console.log(splitText);
     splitText[4] = " ";
     // console.log(splitText);
     text.textContent = "";
