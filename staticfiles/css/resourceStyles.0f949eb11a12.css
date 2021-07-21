@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#resourcesHtml {
+    padding-top: 0;
+}
+
+.columns {
+    margin-bottom: 10px;
+    /* padding: 5px; */
+}
+
+#column1 {
+    margin-top: 5%;
+}
+
+#column2 {
+    margin-top: 7%;
+}
+
+#column1 .column {
+    outline: solid black 1px;
+}
+
+#column1 .card-header {
+    background: lightgray;
+    font-size: 1.5em;
+}
+
+#column1 .content {
+    text-align: center;
+}
+
+#column1 .card {
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #fcf3d6;
+}
+
+#column1 .card-content {
+    padding: 15px 20px 15px 20px;
+}
+
+#column1 .toptitle {
+    margin-top: 10px;
+    margin-bottom: 5%;
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#column1 p.title {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+#column1 p.subtitle {
+    font-size: .9rem;
+}
+
+#column1 .media-content .subtitle {
+    margin-bottom: 15px;
+}
+
+#column1 .author .subtitle {
+    margin-top: 25px;
+}
+
+.accordion, .menu {
+    background-color: #fcf3d6;
+    color: #d3893c;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.accordion li {
+    padding: 0;
+    list-style-type: none;
+}
+
+.button {
+    border: 1px solid #d3893c;
+    text-align: center;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+    color: #d3893c;
+    display: block;
+    margin: 0;
+}
+
+.active, .button:hover {
+    color: black;
+}
+
+.button:after {
+    color:#d3893c;
+    font-weight: bold;
+}
+
+#column2 .card-content {
+    background-color: #fcf3d6;
+    color: #d3893c;
+    display: none;
+}
+
+#column2 .content {
+    margin: 20px;
+}
+
+/* .dropdown {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding-right: 5%;
+    border-color: #d3893c;
+    cursor: pointer;
+}
+
+.icon{
+    float: right;
+}
+
+.fa, .fas {
+    margin-right: 5%;
+}
+
+.collapsible {
+    margin-left: 5%;
+}
+
+a.collapsible {
+    display: block;
+    color: #cc853a;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.button.is-hovered, .button:hover {
+    border-color: #d3893c ;
+}
+
+.dropdown-content {
+    display: none;
+} */
