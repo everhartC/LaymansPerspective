@@ -71,16 +71,18 @@ figure.image {
 }
 
 #bdesc {
-    background-color: lightgray;
+    background-color: transparent;
     opacity: .7;
     animation: transitionUp 1.5s;
     padding-bottom: 0;
+    /* outline: 2px solid white; */
 }
 
 #bdesc .subtitle {
     font-size: 1.5rem;
     margin-bottom: 1%;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
+    color: white;
 }
 
 span {
@@ -98,7 +100,7 @@ span.fade {
 }
 
 p.bd-notification {
-    font-size: 1rem;
+    font-size: 1.2rem;
     /* border-right: 2px solid black; */
     padding: 10px;
     line-height: 100%;
@@ -181,7 +183,7 @@ p.bd-notification {
 
 @keyframes fill {
     0% {
-        width: 35%;
+        width: 55%;
     }
     100% {
         width: 100%;
@@ -193,6 +195,6 @@ p.bd-notification {
         width: 100%;
     }
     100% {
-        width: 35%;
+        width: 55%;
     }
 }
