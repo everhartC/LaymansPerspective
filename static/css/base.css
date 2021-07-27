@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-/* #htmlaccess {
-    padding: 0;
-} */
-
 html.has-navbar-fixed-top {
     padding: 0;
 }
@@ -26,8 +22,9 @@ body {
 }
 
 a.navbar-item:hover {
-    background-color: white;
+    background-color: transparent;
     color: #cf7e2d;
+    animation: text-pop-up-top 0.25s;
 }
 
 .navbar-start .navbar-item > *{
@@ -46,7 +43,17 @@ a.navbar-item:hover {
     /* margin-right: 5%; */
 }
 
-
 .navbar-link {
     font-size: 1.25rem;
+}
+
+@keyframes text-pop-up-top {
+    0% {
+        transform: translateY(0);
+        transform-origin: 0% 0%;
+        text-shadow: none;
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
