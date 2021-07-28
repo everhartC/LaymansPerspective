@@ -18,13 +18,10 @@
         </div>
         <div id="target" class="navbar-menu is-hoverable is-active">
             <div class="navbar-start ml-4">
-                <a id="0" class="navbar-item fancy is-4" href="{% url 'home' %}">
+                <a id="0" class="navbar-item fancy is-4" href="{% url 'home' %}#">
                     Home
                 </a>
-                <a id="1" class="navbar-item fancy" href="#">
-                    Buy the Book
-                </a>
-                <a id="2" class="navbar-item fancy" href="{% url 'about' %}">
+                <a id="1" class="navbar-item fancy" href="{% url 'about' %}">
                     About the Author
                 </a>
                 <div id="test" class="navbar-item has-dropdown is-hoverable">
@@ -58,7 +55,7 @@
                     <p id="fname" class="title">Dave</p>
                     <p id="lname" class="title">Foucar</p>
                     <div id="bigcolumns" class="columns">
-                        <div id="imgcol" class="column is-half-mobile is-half-tablet is-two-fifths-desktop is-one-third-widescreen is-one-quarter-fullhd pt-0">
+                        <div id="imgcol" class="column is-two-fifths-mobile is-half-tablet is-two-fifths-desktop is-one-third-widescreen is-one-quarter-fullhd pt-0">
                             <figure class="image">
                                 <img class="left" src="{% static 'images/cover.png' %}" alt="">
                             </figure>
