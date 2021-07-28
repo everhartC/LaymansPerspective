@@ -8,7 +8,7 @@
 {% endblock css %}
 
 {% block header %}
-    <nav id="mainnav" class="navbar is-expanded is-spaced is-fixed-top" role="navigation" aria-label="main-navigation">
+    <nav id="mainnav" class="navbar is-expanded is-spaced" role="navigation" aria-label="main-navigation">
         <div class="navbar-brand">
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="target">
                 <span aria-hidden="true"></span>
@@ -54,17 +54,19 @@
         <section id="content" class="hero">
             <div class="hero-body">
                 <div class="container has-text-centered is-fluid">
-                    <p id="fancy" class="title">Dave Foucar</p>
+                    {% comment %} <p id="fancy" class="title"></p> {% endcomment %}
+                    <p id="fname" class="title">Dave</p>
+                    <p id="lname" class="title">Foucar</p>
                     <div id="bigcolumns" class="columns">
-                        <div id="imgcol" class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd pt-0">
+                        <div id="imgcol" class="column is-half-mobile is-half-tablet is-two-fifths-desktop is-one-third-widescreen is-one-quarter-fullhd pt-0">
                             <figure class="image">
                                 <img class="left" src="{% static 'images/cover.png' %}" alt="">
                             </figure>
                         </div>
-                        <div id="bdesc" class="column is-7 is-offset-1">
+                        <div id="bdesc" class="column is-8">
                             <p class="subtitle">
                                 As Christians, we want to share our faith. We want to tell others about Jesus. 
-                                <strong><em>But what do you say when people ask about Jesus?</em></strong>
+                                <strong><em>But what do YOU say when people ask about Jesus?</em></strong>
                             </p>
 
                             <!-- BOOK DESCRIPTION COLUMN-->

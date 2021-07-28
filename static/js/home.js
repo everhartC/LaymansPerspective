@@ -1,32 +1,19 @@
 $(function() {
-    const text = document.querySelector("#fancy");
-    // console.log(text);
-    const strText = text.textContent;
-    const splitText = strText.split("");
-    console.log(splitText);
-    splitText[4] = " ";
-    // console.log(splitText);
-    text.textContent = "";
-    for(let i = 0; i < splitText.length; i++){
-        text.innerHTML += "<span>" + splitText[i] + "</span>"; 
-    }
+    var $fname = $("#fname");
+    var $lname = $("#lname");
 
-    let char = 0;
     let timer = setInterval(onTick, 50);
 
     function onTick() {
-        const span = text.querySelectorAll('span')[char];
-        span.classList.add('fade');
-        char++;
-        if(char === splitText.length) {
-            complete();
-            return;
-        }
+        $fname.addClass('fade');
+        $lname.addClass('fade');
+        complete();
+        return;
     }
 
     function complete() {
         clearInterval(timer);
-        timer = null;
+        timer=null;
     }
 
     var $html = $('html');
@@ -43,7 +30,20 @@ $(function() {
         .fadeIn(2000)
         .end()
         .appendTo('#reviewCol');
-    }, 10000);
+    }, 15000);
+
+    var $window = $(window);
+    
+    // if ($window.height() < 700){
+    //     $('.container').height("850px");
+    // } else if ($window.height() < 900) {
+    //     $('.container').height("850px");
+    // } else if ($window.height() > 900) {
+    //     $('.container').height("900px");
+    // };
+    $('.container').height($window.height()/1.1);
+
+    console.log($window.height());
 
     $('.button a').on('click', function(e) {
         e.preventDefault();
