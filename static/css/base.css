@@ -9,6 +9,8 @@ html.has-navbar-fixed-top {
 
 body {
     font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
@@ -46,6 +48,7 @@ a.navbar-item:hover {
 .navbar-link {
     font-size: 1.25rem;
 }
+
 
 @keyframes text-pop-up-top {
     0% {

@@ -48,7 +48,7 @@
 {% endblock header %}
 
 {% block content %}
-        <section id="content" class="hero">
+        <div id="content" class="hero">
             <div class="hero-body">
                 <div class="container has-text-centered is-fluid">
                     {% comment %} <p id="fancy" class="title"></p> {% endcomment %}
@@ -67,7 +67,7 @@
                             </p>
 
                             <!-- BOOK DESCRIPTION COLUMN-->
-                            <div id="rightbox" class="columns is-centered">
+                            <div id="rightbox" class="columns is-centered ">
                                 <div id="desc" class="column">
                                     <div class="card">
                                         <div class="card-content">
@@ -134,6 +134,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+            <footer class="footer">
+                <div id="footer-cont" class="content">
+                    <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24">
+                </div>
+            </footer>
+        </div>
 <script src="{% static 'js/home.js' %}"></script>
 {% endblock content %}
+
+{% block footer %}
+    
+{% endblock footer %}

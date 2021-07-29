@@ -10,17 +10,22 @@
     -webkit-background-size: cover;
     -o-background-size: cover;
     overflow: auto;
+    overflow-x: hidden;
     padding-top: 0;
 }
 
+
+
 .hero-body {
     padding: 0px;
+    height: 90vh;
 }
 
 .container.is-fluid {
     position: absolute;
     /* padding-left: px; */
     min-height: 800px;
+    /* display: flex; */
 }
 
 #mainnav {
@@ -99,13 +104,13 @@ figure {
 }
 
 #fname {
-    transition: all 2s ease;
+    transition: all 5s ease;
     transform: translateY(-500px);
     margin-right: 1%;
 }
 
 #lname {
-    transition: all 2s ease;
+    transition: all 5s ease;
     transform: translateY(500px);
     margin-left: 1%;
 }
@@ -185,6 +190,14 @@ p.source {
     color: #cf732d;
 }
 
+.footer{
+    background-color: transparent;
+    /* position: flex-end; */
+    /* height: 5%; */
+    padding: 10px;
+    text-align: left;
+
+}
 
 @keyframes transitionIn {
     from {
