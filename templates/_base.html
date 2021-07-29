@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +21,7 @@
 </head>
 <body>
 {% block header %}
-    <nav class="navbar is-expanded is-spaced" role="navigation" aria-label="main-navigation">
+    <nav class="navbar is-expanded is-spaced is-fixed-top" role="navigation" aria-label="main-navigation">
         <div class="navbar-brand">
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="target">
                 <span aria-hidden="true"></span>
@@ -33,9 +33,6 @@
             <div class="navbar-start ml-4">
                 <a class="navbar-item" href="{% url 'home' %}">
                     Home
-                </a>
-                <a class="navbar-item" href="#">
-                    Buy the Book
                 </a>
                 <a class="navbar-item" href="{% url 'about' %}">
                     About the Author
@@ -50,10 +47,6 @@
                         </a>
                         <a class="navbar-item">
                             Leave Review
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Contact Dave
                         </a>
                     </div>
                 </div>
