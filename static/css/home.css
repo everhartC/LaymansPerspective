@@ -14,8 +14,6 @@
     padding-top: 0;
 }
 
-
-
 .hero-body {
     padding: 0px;
     height: 90vh;
@@ -38,9 +36,6 @@ figure {
     animation: transitionIn 1.5s;
 }
 
-/* #imgcol {
-    max-height: 1000px;
-} */
 
 .navbar-start {
     flex-grow: 1;
@@ -85,7 +80,6 @@ figure {
     font-family: 'Open Sans', 'Bentham', 'serif';
     font-size: 1.5rem;
     margin-bottom: 1%;
-    /* border-bottom: 2px solid black; */
     color: white;
     margin-left: 5%;
 }
@@ -100,7 +94,6 @@ figure {
     margin-top: 1%;
     opacity: 0;
     display: inline-block;
-    /* color: #cf7e2d;  */
 }
 
 #fname {
@@ -118,7 +111,7 @@ figure {
 #fname.fade, #lname.fade {
     opacity: 1; 
     transform: translateY(0px);
-    color: white; 
+    color: lightgray; 
 }
 
 p.bd-notification {
