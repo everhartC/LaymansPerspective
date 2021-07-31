@@ -70,7 +70,7 @@ body {
     left: 0;
     background-color: #cf7e2d;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease;
 }
 
 .navbar a:not(.navbar-burger):hover::after {
