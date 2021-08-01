@@ -48,17 +48,18 @@ figure {
 }
 
 .navbar, .navbar-item{
-    /* HOME - BUY THE BOOK - ABOUT THE AUTHOR */
+    /* HOME - ABOUT THE AUTHOR - Resources*/
     color: #cf7e2d;
 }
 
 .navbar-item.fancy {
-    font-size: 2rem;
+    font-size: 1.75rem;
     background-color: transparent;
 }
 
+/* MORE dropdown*/
 #elLink {
-    font-size: 2rem;
+    font-size: 1.75rem;
     background-color: transparent;
 }
 
@@ -161,24 +162,24 @@ p.source {
     bottom: 0;
 }
 
-.button a{
+.button.is-large a{
     outline-color: transparent;
     color: #cf732d;
 }
 
-.button {
+.button.is-large {
     animation: fillOut .5s;
     color: #cf732d;
 }
 
-.button:hover{
+.button.is-large:hover{
     color: #cf7e2d;
     width: 100%;
     border: 1px solid #91640F;
     animation: fill .5s;
 } 
 
-.button:active {
+.button.is-large:active {
     outline: 1px solid #cf732d;
     color: #cf732d;
 }
@@ -190,6 +191,21 @@ p.source {
     padding: 10px;
     text-align: left;
 
+}
+
+#mailList {
+    margin-top: 5px;
+    background-color: transparent;
+}
+
+.mail-button {
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    border-color: transparent;
+    color: #cf732d;
+    font-size: 1.5rem;
+    outline-color: transparent;
 }
 
 @keyframes transitionIn {
@@ -216,7 +232,7 @@ p.source {
 
 @keyframes fill {
     0% {
-        width: 65%;
+        width: 50%;
     }
     100% {
         width: 100%;
@@ -228,6 +244,6 @@ p.source {
         width: 100%;
     }
     100% {
-        width: 65%;
+        width: 50%;
     }
 }

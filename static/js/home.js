@@ -43,4 +43,13 @@ $(function() {
         window.open($url, '_blank');
     });
 
+    $('.accordion').on('click', '#mailButtID', function(e) {
+        e.preventDefault();
+        $(this)
+            .next()
+            .children()
+            .not(':animated')
+            .slideToggle();
+    });
+
 });
