@@ -36,4 +36,15 @@ class MailList(models.Model):
         return self.email
 
 
+class Question(models.Model):
+    #* Small group chapter questions
+    part = models.IntegerField()
+    chapter = models.IntegerField()
+    number = models.IntegerField()
+    q = models.TextField()
+    answer = models.CharField(max_length=30, null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return (f"Q#{self.number}: {self.q}")
