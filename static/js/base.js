@@ -8,6 +8,5 @@ $(function() {
         $('.navbar-menu').toggle('is-active');
         $('.navbar-burger').toggle('open');
     });
-
 });
 

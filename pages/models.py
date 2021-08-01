@@ -27,5 +27,13 @@ class Review(models.Model):
     def __str__(self):
         return (self.name, self.description)
 
+class MailList(models.Model):
+    email = models.EmailField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.email
+
 
 
