@@ -48,8 +48,8 @@ $(function() {
         $(this)
             .next()
             .children()
-            .not(':animated')
             .slideToggle();
     });
+
 
 });
