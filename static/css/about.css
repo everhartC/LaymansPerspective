@@ -11,21 +11,17 @@
 #aboutHtml {
     background: url('/static/images/DSC00857.JPG') no-repeat center center fixed;
     background-size: cover;
-    /* -moz-background-size: cover; */
     -webkit-background-size: cover;
     -o-background-size: cover;
     overflow: auto;
     overflow-x: hidden;
     padding-top: 0;
-    /* position: relative; */
 }
 
 .hero-body {
     padding-top: 2%;
     margin-top: 2%;
     overflow: auto;
-    /* position: relative; */
-    /* flex-grow: 1; */
 }
 
 .bodycontain {
@@ -33,12 +29,12 @@
 }
 
 .articles {
-    /* margin: 5rem 0; */
     margin-top: -40%;
+    animation: transitionDown 2s ease;
 }
 
 .dave-sum {
-    font-family: 'Open Sans', 'Bentham', 'Playfair Display', 'serif';
+    font-family: 'Open Sans','Playfair Display', 'serif';
     font-size: 1.25rem;
     vertical-align: middle;
 }
@@ -49,12 +45,9 @@
 }
 
 .card {
-    /* background: rgba(252, 243, 214, 0.9); */
-    /* background-color: #fcf3d6; */
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
     color: #4a4a4a;
     max-width: 100%;
-    /* position: relative; */
     margin-bottom: 25px;
 }
 
@@ -74,7 +67,6 @@ figure.image {
 
 #secondcard .media-content {
     grid-area: 1 / 2 / 2 / 3;
-
 }
 
 @keyframes transitionIn {
@@ -96,18 +88,5 @@ figure.image {
     to {
         opacity: 1;
         transform: translateY(0%);
-    }
-}
-
-@keyframes text-pop-up-top {
-    0% {
-        transform: translateY(0);
-        transform-origin: 50% 50%;
-        /* text-shadow: none; */
-    }
-    100% {
-        transform: translateY(-10px);
-        transform-origin: 50% 50%;
-        /* text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3); */
     }
 }

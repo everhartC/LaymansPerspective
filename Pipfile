@@ -8,6 +8,10 @@ django = "*"
 djangorestframework = "*"
 gunicorn = "*"
 whitenoise = "*"
+django-extensions = "*"
+graphviz = "*"
+pydotplus = "*"
+werkzeug = "*"
 
 [dev-packages]
 

@@ -45,9 +45,10 @@ $(function() {
 
     $('.accordion').on('click', '#mailButtID', function(e) {
         e.preventDefault();
+        let $form = $('.emaillist-form');
+        console.log($form);
         $(this)
-            .next()
-            .children()
+            .next('form')
             .slideToggle();
     });
 

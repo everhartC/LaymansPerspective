@@ -2,15 +2,15 @@
 <!DOCTYPE html>
 <html lang="en" class="has-navbar-fixed-top">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link type="text/css" href="https://fonts.googleapis.com/css2?&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}A Layman's Perspective{% endblock title %}</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Bentham&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     
@@ -37,13 +37,16 @@
                 <a class="navbar-item" href="{% url 'about' %}">
                     About the Author
                 </a>
+                <a class="navbar-item" href="{% url 'resources' %}">
+                    Resources
+                </a>
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link is-arrowless">
                         More
                     </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item" href="{% url 'resources' %}">
-                            Additional Resources
+                        <a class="navbar-item" href="#">
+                            Books Mentioned
                         </a>
                         <a class="navbar-item">
                             Leave Review

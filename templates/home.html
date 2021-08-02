@@ -122,31 +122,32 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="columns is-centered">
-                                <div id="buttcol" class="column is-one-fifth">
-                                    <button class="button is-large is-full-width is-rounded">
-                                        <a href="https://www.amazon.com/dp/B099C4YV18">Buy Book</a>
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="columns is-mobile">
+                    <div id="butt-cols" class="columns is-mobile">
                         <div id="mailList" class="column is-two-fifths-mobile is-half-tablet is-two-fifths-desktop is-one-third-widescreen is-one-quarter-fullhd">
                             <div class="accordion">
                                 <button id="mailButtID" class="mail-button">Join Our Mailing List!</button>
-                                <div class="field has-addons">
-                                    <div class="control has-icons-left is-expanded">
-                                        <input type="text" class="input" placeholder="Enter email">
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-envelope"></i>
-                                        </span>
+                                <form class="emaillist-form" action="#" method="post">
+                                {% csrf_token %}
+                                    <div class="field has-addons">
+                                        <div class="control has-icons-left is-expanded">
+                                            <input type="email" class="input" placeholder="Enter email">
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                        </div>
+                                        <div class="control">
+                                            <a class="button">Send</a>
+                                        </div>
                                     </div>
-                                    <div class="control">
-                                        <a href="#" class="button">Send</a>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
+                        </div>
+                        <div id="buttcol" class="column has-text-centered">
+                            <button class="button is-large is-full-width is-rounded">
+                                <a href="https://www.amazon.com/dp/B099C4YV18">Buy Book</a>
+                            </button>
                         </div>
                     </div>
                     <div class="columns">
@@ -160,11 +161,6 @@
                     </div>
                 </div>
             </div>
-            {% comment %} <footer class="footer">
-                <div id="footer-cont" class="content">
-                    <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24">
-                </div>
-            </footer> {% endcomment %}
         </div>
 <script src="{% static 'js/home.js' %}"></script>
 {% endblock content %}

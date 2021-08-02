@@ -41,6 +41,9 @@ INSTALLED_APPS = [
 
     # Local
     'pages',
+
+    # Third-Party
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

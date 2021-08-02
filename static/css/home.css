@@ -6,7 +6,6 @@
 #homeHtml {
     background: url('/static/images/DSC03204.JPG') no-repeat center center fixed;
     background-size: cover;
-    /* -moz-background-size: cover; */
     -webkit-background-size: cover;
     -o-background-size: cover;
     overflow: auto;
@@ -21,9 +20,7 @@
 
 .container.is-fluid {
     position: absolute;
-    /* padding-left: px; */
     min-height: 800px;
-    /* display: flex; */
 }
 
 #mainnav {
@@ -73,12 +70,10 @@ figure {
     animation: transitionUp 1.5s;
     padding: 0;
     margin-left: 1%;
-    /* padding: 50px; */
-    /* outline: 2px solid white; */
 }
 
 #bdesc .subtitle {
-    font-family: 'Open Sans', 'Bentham', 'serif';
+    font-family: 'Open Sans', 'serif';
     font-size: 1.5rem;
     margin-bottom: 1%;
     color: white;
@@ -118,7 +113,6 @@ figure {
 p.bd-notification {
     font-family: 'Open Sans';
     font-size: 1.1rem;
-    /* border-right: 2px solid black; */
     padding: 10px;
     line-height: 125%;
 }
@@ -141,7 +135,7 @@ p.bd-notification {
 }
 
 p.source {
-    font-family: 'Bentham';
+    font-family: 'Open Sans', 'serif';
 }
 
 #reviewCol .card {
@@ -157,9 +151,8 @@ p.source {
     padding: 0;
 }
 
-#buttcol {
-    position: absolute;
-    bottom: 0;
+#butt-cols {
+    margin-top: 5%;
 }
 
 .button.is-large a{
@@ -168,7 +161,7 @@ p.source {
 }
 
 .button.is-large {
-    animation: fillOut .5s;
+    animation: fillOut .5s ease-in-out;
     color: #cf732d;
 }
 
@@ -176,7 +169,7 @@ p.source {
     color: #cf7e2d;
     width: 100%;
     border: 1px solid #91640F;
-    animation: fill .5s;
+    animation: fill .5s ease-in-out;
 } 
 
 .button.is-large:active {
@@ -186,10 +179,9 @@ p.source {
 
 .footer{
     background-color: transparent;
-    /* position: flex-end; */
-    /* height: 5%; */
     padding: 10px;
     text-align: left;
+    margin-top: 5%;
 
 }
 
@@ -220,9 +212,32 @@ p.source {
     cursor: pointer;
 }
 
-.field .control {
+form {
     display: none;
 }
+
+.input {
+    background-color: lightgray;
+    outline-color: black;
+    border-color: transparent;
+}
+
+.input:focus, .input:active, .input:hover {
+    border-color: #cf732d;
+}
+
+a.button {
+    background-color: black;
+    color: #cf732d;
+    border-color: transparent;
+}
+
+a.button:focus, a.button:hover, a.button:active {
+    border-color: #cf732d;
+    color: #cf732d;
+}
+
+
 
 @keyframes transitionIn {
     from {
@@ -248,7 +263,7 @@ p.source {
 
 @keyframes fill {
     0% {
-        width: 50%;
+        width: 20%;
     }
     100% {
         width: 100%;
@@ -260,6 +275,6 @@ p.source {
         width: 100%;
     }
     100% {
-        width: 50%;
+        width: 20%;
     }
 }

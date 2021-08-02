@@ -15,8 +15,6 @@ body {
 
 .navbar {
     border-bottom: 2px solid #d3893c;
-    border-top: 2px solid #d3893c;
-    /* min-height: 2rem; */
     max-height: 4rem;
     padding: 5px;
 }
