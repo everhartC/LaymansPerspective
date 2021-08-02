@@ -226,13 +226,13 @@ form {
     border-color: #cf732d;
 }
 
-a.button {
+.control .button {
     background-color: black;
     color: #cf732d;
     border-color: transparent;
 }
 
-a.button:focus, a.button:hover, a.button:active {
+.control .button:focus, .control .button:hover, .control .button:active {
     border-color: #cf732d;
     color: #cf732d;
 }
