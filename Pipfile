@@ -13,6 +13,8 @@ graphviz = "*"
 pydotplus = "*"
 werkzeug = "*"
 django-bulma-widget = "*"
+environs = {extras = ["django"], version = "*"}
+psycopg2-binary = "*"
 
 [dev-packages]
 
