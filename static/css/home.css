@@ -214,6 +214,10 @@ p.source {
     cursor: pointer;
 }
 
+form {
+    display: none;
+}
+
 .input {
     background-color: lightgray;
     outline-color: black;
