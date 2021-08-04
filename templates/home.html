@@ -128,7 +128,8 @@
                         <div id="mailList" class="column is-two-fifths-mobile is-half-tablet is-two-fifths-desktop is-one-third-widescreen is-one-quarter-fullhd">
                             <div class="accordion">
                                 <button id="mailButtID" class="mail-button">Join Our Mailing List!</button>
-                                <form id="post-form" class="emaillist-form" action="/create_post/" method="post">
+                                <div class="add-email"></div>
+                                <form id="post-form" class="emaillist-form" action="/" method="post">
                                 {% csrf_token %}
                                     <div class="field has-addons">
                                         <div class="control has-icons-left is-expanded">
