@@ -12,14 +12,18 @@ class HomePageView(TemplateView):
 
     form_class = EmailForm
 
-    def get(self, request, *args, **kwargs):
-        form = self.form_class
-        return render(request, self.template_name, {'form': form})
+    # def get(self, request, *args, **kwargs):
+    #     form = self.form_class
+    #     return render(request, self.template_name, {'form': form})
 
     def post(self, request, *args, **kwargs):
-        form = self.form_class(request.POST)
+        form = EmailForm(request.POST)
         if form.is_valid():
-            form.save()
+            new_email = form.save(commit=False)
+            new_email.save()
+        else:
+            print(form.errors)
+
         return redirect('home')
 
 class AboutPageView(TemplateView):

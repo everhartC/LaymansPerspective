@@ -50,6 +50,11 @@ $(function() {
     });
 
     // $('#post-form').submit(function(e){
+    //     e.preventDefault();
+    //     console.log('posted');
+    // })
+
+    // $('#post-form').submit(function(e){
     //     $.post('/addEmail/',
     //     $(this).serialize(), function(data){
     //         $('.add-email').html(data.message);

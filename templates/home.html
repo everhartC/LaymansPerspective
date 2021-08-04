@@ -126,14 +126,19 @@
                     </div>
                     <div id="butt-cols" class="columns is-mobile">
                         <div id="mailList" class="column is-two-fifths-mobile is-half-tablet is-two-fifths-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                            <div class="add-email">
+                                {% for emails in form %}
+                                    {{form.as_p}}
+                                {% endfor %}
+                            </div>
                             <div class="accordion">
                                 <button id="mailButtID" class="mail-button">Join Our Mailing List!</button>
-                                <div class="add-email"></div>
                                 <form id="post-form" class="emaillist-form" action="/" method="post">
                                 {% csrf_token %}
                                     <div class="field has-addons">
                                         <div class="control has-icons-left is-expanded">
-                                            <input type="email" class="input" placeholder="Enter email">
+                                            {% comment %} <input type="email" class="input" placeholder="Enter email"> {% endcomment %}
+                                            {{form.as_ap}}
                                             <span class="icon is-small is-left">
                                                 <i class="fas fa-envelope"></i>
                                             </span>

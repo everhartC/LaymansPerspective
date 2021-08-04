@@ -12,6 +12,7 @@ django-extensions = "*"
 graphviz = "*"
 pydotplus = "*"
 werkzeug = "*"
+django-bulma-widget = "*"
 
 [dev-packages]
 

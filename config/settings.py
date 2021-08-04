@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     # Third-Party
     'django_extensions',
+    'bulma_widget',
 ]
 
 MIDDLEWARE = [
