@@ -43,8 +43,9 @@ INSTALLED_APPS = [
     'pages',
 
     # Third-Party
-    'django_extensions',
     'bulma_widget',
+    'django_extensions',
+    
 ]
 
 MIDDLEWARE = [

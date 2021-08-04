@@ -200,8 +200,10 @@ p.source {
 
 .mail-button {
     width: 100%;
+    /* background-color: rgb(156, 146, 146); */
     background-color: black;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     border-color: transparent;
     color: #cf732d;
     font-size: 1.5rem;
@@ -212,24 +214,29 @@ p.source {
     cursor: pointer;
 }
 
-form {
-    display: none;
-}
-
 .input {
     background-color: lightgray;
     outline-color: black;
     border-color: transparent;
+    border-bottom-left-radius: 10px;
+
 }
 
 .input:focus, .input:active, .input:hover {
     border-color: #cf732d;
 }
 
+.input::placeholder {
+    color: black;
+    opacity: .5;
+}
+
+
 .control .button {
     background-color: black;
     color: #cf732d;
     border-color: transparent;
+    border-bottom-right-radius: 10px;
 }
 
 .control .button:focus, .control .button:hover, .control .button:active {

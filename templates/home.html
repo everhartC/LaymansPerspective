@@ -1,6 +1,7 @@
 <!-- templates/home.html-->
 {% extends '_base.html' %}
 {% load static %}
+{% include 'bulma_widget/form.djhtml' with form=form %}
 
 {% block css %}
 {% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"> {% endcomment %}
@@ -126,19 +127,14 @@
                     </div>
                     <div id="butt-cols" class="columns is-mobile">
                         <div id="mailList" class="column is-two-fifths-mobile is-half-tablet is-two-fifths-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                            <div class="add-email">
-                                {% for emails in form %}
-                                    {{form.as_p}}
-                                {% endfor %}
-                            </div>
                             <div class="accordion">
                                 <button id="mailButtID" class="mail-button">Join Our Mailing List!</button>
                                 <form id="post-form" class="emaillist-form" action="/" method="post">
                                 {% csrf_token %}
                                     <div class="field has-addons">
-                                        <div class="control has-icons-left is-expanded">
+                                        <div class="control has-icons-left is-expanded" name="email">
                                             {% comment %} <input type="email" class="input" placeholder="Enter email"> {% endcomment %}
-                                            {{form.as_ap}}
+                                            {{form}}
                                             <span class="icon is-small is-left">
                                                 <i class="fas fa-envelope"></i>
                                             </span>
