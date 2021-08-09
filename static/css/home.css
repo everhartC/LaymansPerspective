@@ -126,10 +126,6 @@ p.bd-notification {
     margin-right: 2%;
 }
 
-#reviewCol {
-    position: relative;
-}
-
 .author {
     font-family: 'Playfair Display';
 }
@@ -138,14 +134,18 @@ p.source {
     font-family: 'Open Sans', 'serif';
 }
 
-/* #reviewCol .card {
+#reviewCol {
+    position: relative;
+}
+
+#reviewCol .card {
     position: absolute;
-} */
+}
 
 .card {
     border-radius: 1rem;
     height: auto;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 .card-content {
@@ -178,14 +178,6 @@ p.source {
     color: #cf732d;
 }
 
-.footer{
-    background-color: transparent;
-    padding: 10px;
-    text-align: left;
-    margin-top: 5%;
-    position: relative;
-}
-
 #mailList {
     margin-top: 5px;
     background-color: transparent;
@@ -201,7 +193,6 @@ p.source {
 
 .mail-button {
     width: 100%;
-    /* background-color: rgb(156, 146, 146); */
     background-color: black;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -236,7 +227,6 @@ form {
     opacity: .5;
 }
 
-
 .control .button {
     background-color: black;
     color: #cf732d;
@@ -250,9 +240,24 @@ form {
 }
 
 section.hero {
-    background-color: white;
-    height: 200px;
+    background-color: lightgray;
+    opacity: .7;
+    margin-top: 5%;
+
 }
+
+#footer-col {
+    margin-top: 40%;
+}
+
+.footer{
+    background-color: transparent;
+    padding: 10px;
+    text-align: left;
+    margin-top: 5%;
+
+}
+
 
 
 @keyframes transitionIn {
