@@ -35,7 +35,7 @@ $(function() {
     var $window = $(window);
     $('.container').height($window.height()/1.15);
 
-    $('.hero-body').height($('.container').height()+20);
+    $('#main-content').height($('.container').height()+20);
 
     $('.button a').on('click', function(e) {
         e.preventDefault();

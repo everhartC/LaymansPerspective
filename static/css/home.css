@@ -13,7 +13,7 @@
     padding-top: 0;
 }
 
-.hero-body {
+#main-content {
     padding: 0px;
     height: 90vh;
 }
@@ -138,13 +138,14 @@ p.source {
     font-family: 'Open Sans', 'serif';
 }
 
-#reviewCol .card {
+/* #reviewCol .card {
     position: absolute;
-}
+} */
 
 .card {
     border-radius: 1rem;
     height: auto;
+    margin-top: 2%;
 }
 
 .card-content {
@@ -152,7 +153,7 @@ p.source {
 }
 
 #butt-cols {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .button.is-large a{
@@ -182,7 +183,7 @@ p.source {
     padding: 10px;
     text-align: left;
     margin-top: 5%;
-
+    position: relative;
 }
 
 #mailList {
@@ -248,6 +249,10 @@ form {
     color: #cf732d;
 }
 
+section.hero {
+    background-color: white;
+    height: 200px;
+}
 
 
 @keyframes transitionIn {

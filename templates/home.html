@@ -49,7 +49,7 @@
 
 {% block content %}
         <div id="content" class="hero">
-            <div class="hero-body">
+            <div id="main-content" class="hero-body">
                 <div class="container has-text-centered is-fluid">
                     {% comment %} <p id="fancy" class="title"></p> {% endcomment %}
                     <p id="fname" class="title">Dave</p>
@@ -84,7 +84,7 @@
                                     </div>
                                 </div>
                                 <!-- REVIEW COLUMN -->
-                                <div id="reviewCol" class="column mr-3">
+                                {% comment %} <div id="reviewCol" class="column mr-3">
                                     <div id="marCard" class="card">
                                         <div class="card-content">
                                             <p class="bd-notification">
@@ -121,7 +121,7 @@
                                             <p class="source"><em>Second Favorite Son-in-Law</em></p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> {% endcomment %}
                             </div>
                         </div>
                     </div>
@@ -153,16 +153,60 @@
                             </button>
                         </div>
                     </div>
-                    <div class="columns">
-                        <div class="column is-2">
-                            <footer class="footer">
-                                <div id="footer-cont" class="content">
-                                    <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24">
+                    <section class="hero is-small">
+                        <div id="hero-review" class="hero-body has-text-centered">
+                            <p class="title reviews">What Do Others Say About the Book?</h1>
+                        </div>
+                    </section>
+                    <div class="columns has-text-centered">
+                        <div id="reviewCol" class="column is-6 is-offset-2 mr-3">
+                            <div id="marCard" class="card">
+                                <div class="card-content">
+                                    <p class="bd-notification">
+                                        "Church leaders looking for an excellent resource on how to share Christ will be encouraged 
+                                        by Dave Foucar’s new book, “What Do I Say When Asked About Jesus? A Layman’s Perspective on 
+                                        Personal Evangelism and the Basics of the Christian Faith.” This easy to read book describes 
+                                        how average people in the church can know the basics of the Gospel and share their faith effectively. 
+                                        The examples are from years of real life experiences sharing the Gospel. Dave is biblically solid, 
+                                        his applications are practical and sensitive to people who have questions. 
+                                        This book is very suitable for personal spiritual growth or as a small group or leadership development resource."
+                                    </p>
+                                    <p class="author"><strong>Charlie Maloney</strong></p>
+                                    <p class="source"><em>Senior Pastor Emeritus, Camarillo Christian Church</em></p>
                                 </div>
-                            </footer>
+                            </div>
+                            <div id="marCard" class="card">
+                                <div class="card-content">
+                                    <p class="bd-notification">
+                                        "I may be biased because Dave is my Father-in-Law, however, I found this book to be incredibly impactful
+                                        to my spiritual journey towards the heart of Jesus. "
+                                    </p>
+                                    <p class="author"><strong>Cameron Everhart</strong></p>
+                                    <p class="source"><em>Family of Dave's</em></p>
+                                </div>
+                            </div>
+                            <div id="marCard" class="card">
+                                <div class="card-content">
+                                    <p class="bd-notification">
+                                        "I really thought the buk was boring and porely written.
+                                        Of course I have no bases for this comment, I gess it just 
+                                        didn't jive wit me."
+                                    </p>
+                                    <p class="author"><strong>Jeremy Stein</strong></p>
+                                    <p class="source"><em>Second Favorite Son-in-Law</em></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-2 is-left">
+                                <footer class="footer">
+                                    <div id="footer-cont" class="content">
+                                        <img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24">
+                                    </div>
+                                </footer>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
 <script src="{% static 'js/home.js' %}"></script>
