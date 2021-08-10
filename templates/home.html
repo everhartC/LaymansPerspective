@@ -83,45 +83,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- REVIEW COLUMN -->
-                        {% comment %} <div id="reviewCol" class="column mr-3">
-                            <div id="marCard" class="card">
-                                <div class="card-content">
-                                    <p class="bd-notification">
-                                        "Church leaders looking for an excellent resource on how to share Christ will be encouraged 
-                                        by Dave Foucar’s new book, “What Do I Say When Asked About Jesus? A Layman’s Perspective on 
-                                        Personal Evangelism and the Basics of the Christian Faith.” This easy to read book describes 
-                                        how average people in the church can know the basics of the Gospel and share their faith effectively. 
-                                        The examples are from years of real life experiences sharing the Gospel. Dave is biblically solid, 
-                                        his applications are practical and sensitive to people who have questions. 
-                                        This book is very suitable for personal spiritual growth or as a small group or leadership development resource."
-                                    </p>
-                                    <p class="author"><strong>Charlie Maloney</strong></p>
-                                    <p class="source"><em>Senior Pastor Emeritus, Camarillo Christian Church</em></p>
-                                </div>
-                            </div>
-                            <div id="marCard" class="card">
-                                <div class="card-content">
-                                    <p class="bd-notification">
-                                        "I may be biased because Dave is my Father-in-Law, however, I found this book to be incredibly impactful
-                                        to my spiritual journey towards the heart of Jesus. "
-                                    </p>
-                                    <p class="author"><strong>Cameron Everhart</strong></p>
-                                    <p class="source"><em>Family of Dave's</em></p>
-                                </div>
-                            </div>
-                            <div id="marCard" class="card">
-                                <div class="card-content">
-                                    <p class="bd-notification">
-                                        "I really thought the buk was boring and porely written.
-                                        Of course I have no bases for this comment, I gess it just 
-                                        didn't jive wit me."
-                                    </p>
-                                    <p class="author"><strong>Jeremy Stein</strong></p>
-                                    <p class="source"><em>Second Favorite Son-in-Law</em></p>
-                                </div>
-                            </div>
-                        </div> {% endcomment %}
                     </div>
                 </div>
             </div>
@@ -129,18 +90,16 @@
                 <div id="mailList" class="column is-two-fifths-mobile is-half-tablet is-two-fifths-desktop is-one-third-widescreen is-one-quarter-fullhd">
                     <div class="accordion">
                         <button id="mailButtID" class="mail-button">Join Our Mailing List!</button>
-                        <form id="post-form" class="emaillist-form" action="/" method="post">
+                        <form id="post-form" class="emaillist-form" method="post">
                         {% csrf_token %}
                             <div class="field has-addons">
                                 <div class="control has-icons-left is-expanded" name="email">
-                                    {% comment %} <input type="email" class="input" placeholder="Enter email"> {% endcomment %}
                                     {{form}}
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                     </span>
                                 </div>
                                 <div class="control">
-                                    {% comment %} <a class="button">Send</a> {% endcomment %}
                                     <button type="submit" class="button">Send</button>
                                 </div>
                             </div>

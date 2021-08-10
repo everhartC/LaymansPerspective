@@ -12,7 +12,7 @@ class EmailForm(forms.ModelForm):
         fields = ['email']
         
         widgets = {
-            'email': widgets.BulmaTextInput(attrs={'class': 'input', 'type': 'email', 'placeholder': 'Enter Email'}),
+            'email': widgets.BulmaTextInput(attrs={'class': 'input', 'id': 'email', 'type': 'email', 'placeholder': 'Enter Email'}),
             'email': forms.EmailInput(attrs={
                 'class': 'input',
                 'placeholder': 'Enter Email'})
