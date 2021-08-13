@@ -14,8 +14,8 @@ body {
 }
 
 .navbar {
-    border-bottom: 2px solid #d3893c;
-    max-height: 4rem;
+    /* border-bottom: 2px solid #d3893c; */
+    max-height: 3.5rem;
     padding: 5px;
 }
 
@@ -76,6 +76,9 @@ body {
     transform-origin: bottom left;
 }
 
+a.navbar-burger {
+    color: #cf7e2d ;
+}
 
 @keyframes text-pop-up-top {
     0% {

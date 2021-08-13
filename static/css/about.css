@@ -3,12 +3,7 @@
     margin: 0;
 }
 
-#nav {
-    padding: 10px;
-    min-height: 2rem;
-}
-
-#aboutHtml {
+#aboutBody {
     background: url('/static/images/DSC00857.JPG') no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -18,24 +13,27 @@
     padding-top: 0;
 }
 
-.hero-body {
-    /* padding-top: 2%;
-    margin-top: 2%;  */
-    overflow: auto;
+nav {
+    padding: 10px;
+    min-height: 2rem;
+    max-height: 2.75rem;
+    /* height: 50px; */
 }
+
 
 .bodycontain {
     position: fixed;
 }
 
 .articles {
-    margin-top: -40%;
+    margin-top: -30%;
     animation: transitionDown 2s ease;
+    overflow: auto;
 }
 
 .dave-sum {
     font-family: 'Open Sans','Playfair Display', 'serif';
-    font-size: 1.25rem;
+    font-size: 1rem;
     vertical-align: middle;
 }
 

@@ -2,7 +2,11 @@ $(function() {
     var $html = $('html');
     $html.attr('id', 'aboutHtml');
 
-    $('.hero').offset({top: $('.navbar').innerHeight(), left: 0});
-    console.log($('.hero').position());
-    console.log($('.hero').offset());
+    var $body = $('body');
+    $body.attr('id', 'aboutBody');
+    $body.offset({top: $('.navbar').innerHeight()});
+
+    // var $test = $('.test');
+    // $test.height($('.navbar').innerHeight());
+
 })
