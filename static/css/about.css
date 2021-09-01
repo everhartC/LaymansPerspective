@@ -26,7 +26,7 @@ nav {
 }
 
 .articles {
-    margin-top: -30%;
+    margin-top: -40%;
     animation: transitionDown 2s ease;
     overflow: auto;
 }
