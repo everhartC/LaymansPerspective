@@ -10,3 +10,4 @@ __pycache__/
 local_settings.py
 venv/
 myapp_models.png
+datadump.json
