@@ -16,6 +16,8 @@ django-bulma-widget = "*"
 environs = {extras = ["django"], version = "*"}
 psycopg2-binary = "*"
 psycopg2 = "*"
+dj-database-url = "*"
+django-heroku = "*"
 
 [dev-packages]
 
