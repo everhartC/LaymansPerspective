@@ -35,6 +35,11 @@ class BookListView(ListView):
     model = Book
     context_object_name = 'book_list'
 
+class BooksMentionedView(ListView):
+    template_name = 'booksMentioned.html'
+    model = Book
+    context_object_name = 'book_list'
+
 class ReView(TemplateView):
     template_name = "reviews.html"
     model = Review

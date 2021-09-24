@@ -47,4 +47,4 @@ class Question(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return (f"Q#{self.number}: {self.q}")
+        return (f"Ch{self.chapter}, Question {self.number}: {self.q} -{self.answer}-")

@@ -7,7 +7,7 @@
 
 {% block content %}
     <div class="columns">
-        <div id="column1" class="column is-4">
+        {% comment %} <div id="column1" class="column is-4">
             <p class="toptitle">Resources Mentioned in the Book</p>
         {% for book in book_list %}
             <div class="card">
@@ -36,8 +36,8 @@
                 </div>
             </div>
         {% endfor %}
-        </div>
-        <div id="column2" class="column">
+        </div> {% endcomment %}
+        <div id="column2" class="column is-6 is-offset-1">
             <p class="toptitle">Small Group Questions</p>
             <ul class="accordion">
                 <li>
