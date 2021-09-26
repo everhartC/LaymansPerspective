@@ -8,7 +8,7 @@
 {% block content %}
 <div class="columns is-centered">
     <div id="column1" class="column is-6">
-        <p class="toptitle">Resources Mentioned in the Book</p>
+        <p class="toptitle">Recommended Books</p>
     {% for book in book_list %}
         <div class="card">
             <div class="card-content">
@@ -30,7 +30,7 @@
                     {% if book.id == 6 %}
                         <p><a class="booklink" href="{{book.link}}">Link to Short Story</a></p>
                     {% else %}
-                        <p><a class="booklink" href="{{book.link}}">See on Amazon</a></p>
+                        <p><a id="amazon" class="booklink" href="{{book.link}}">See on Amazon</a></p>
                     {% endif %}
                 </div>
             </div>
@@ -38,4 +38,7 @@
     {% endfor %}
     </div>
 </div>
+
+<script src="{% static 'js/booksMentioned.js' %}"></script>
+
 {% endblock content %}
