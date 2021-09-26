@@ -1,0 +1,33 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/blogStyles.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+{% endblock css %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-body">
+        {% if feed %}
+        <h2 class="title">{{feed.feed.title}}</h2>
+        <h4 class="subtitle">{{feed.feed.link}}author/show/21662024.Dave_Foucar/blog</h4>
+        {% if feed.items %}
+
+        {% for item in feed.items %}
+        <div class="item">
+            <p>
+                {{item.published}}
+                <a href="{{item.link}}">{{item.title}}</a>
+                {{item.author}}
+            </p>
+        </div>
+        {% endfor %}
+        {% comment %} {% for entry in feed.entries %}
+            <h1>{{entry.summary}}</h1>
+        {% endfor %} {% endcomment %}
+        {% endif %}
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

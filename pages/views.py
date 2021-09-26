@@ -1,9 +1,10 @@
 from django.http.response import JsonResponse
+from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.views.generic import TemplateView, ListView
 from .models import Book, Review, MailList
 from .forms import EmailForm
-
+import feedparser
 
 # Create your views here.
 
@@ -43,3 +44,9 @@ class BooksMentionedView(ListView):
 class ReView(TemplateView):
     template_name = "reviews.html"
     model = Review
+
+def blogs(request):
+    url = "https://www.goodreads.com/author/show/21662024.Dave_Foucar/blog?format=rss"
+    feed = feedparser.parse(url)
+
+    return render(request, 'blogArticles.html', {'feed': feed})
