@@ -20,12 +20,13 @@ class Review(models.Model):
     description = models.TextField(null=True, blank=True)
     rating = models.IntegerField(default=5)
     name = models.CharField(max_length=100)
-    email = models.EmailField()
+    source = models.CharField(max_length=200, null=True, blank=True)
+    email = models.EmailField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return (self.name, self.description)
+        return (f"{self.name}, {self.description}")
 
 class MailList(models.Model):
     email = models.EmailField()
