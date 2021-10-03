@@ -11,6 +11,13 @@ import feedparser
 class HomePageView(TemplateView):
     model = MailList
     template_name = 'home.html'
+    # context_object_name = 'reviews'
+    
+    # def get_context_data(self, **kwargs):
+    #     context = super(HomePageView, self).get_context_data(**kwargs)
+    #     context['MailList'] = MailList.objects.all()
+    #     context['Review'] = Review.objects.all()
+    #     return context
 
     form_class = EmailForm
 
@@ -43,7 +50,8 @@ class BooksMentionedView(ListView):
 
 class ReView(TemplateView):
     template_name = "reviews.html"
-    model = Review
+    # model = Review
+
 
 def blogs(request):
     url = "https://www.goodreads.com/author/show/21662024.Dave_Foucar/blog?format=rss"

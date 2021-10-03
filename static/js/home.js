@@ -66,5 +66,14 @@ $(function() {
         });
     });
 
+    // $revs = $('')
+
+    // $('#reviewCol .card:gt(0)').hide();
+    // setInterval(function() {
+    //     $('#reviewCol .card.slice(0,3)')
+    //     .fadeOut(2000)
+    //     .next
+    // })
+
     
 });
